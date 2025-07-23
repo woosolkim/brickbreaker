@@ -1,7 +1,8 @@
 # Brick Breaker Game
 
 A simple, classic brick breaker game made with HTML, CSS, and vanilla JavaScript using geminicli.
-Work time: 3 minutes
+
+It took about 3 minutes to create.
 
 ## How to Play
 
