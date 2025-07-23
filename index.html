@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Brick Breaker</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  #gameContainer {
+    width: 800px;
+    height: 600px;
+    border: 2px solid black;
+    position: relative;
+    background-color: #eee;
+    overflow: hidden;
+  }
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+  }
+  #paddle {
+    width: 150px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    bottom: 10px;
+  }
+  .brick {
+    background-color: green;
+    position: absolute;
+    border: 1px solid white;
+    box-sizing: border-box;
+  }
+  .item {
+      width: 25px;
+      height: 25px;
+      background-color: gold;
+      position: absolute;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 25px;
+      font-weight: bold;
+  }
+  #gameOverScreen {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 48px;
+      text-align: center;
+  }
+  #restartButton {
+      font-size: 24px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div id="gameContainer">
+  <div id="paddle"></div>
+  <div id="gameOverScreen">
+      <div id="message"></div>
+      <button id="restartButton">Restart</button>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
